@@ -107,6 +107,7 @@
 html {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -141,6 +142,10 @@ button {
 }
 
 /* header-line */
+
+body.overflow-hide {
+  overflow: hidden;
+}
 
 .header-line__inner {
   font-weight: 500;
@@ -178,6 +183,58 @@ button {
   border-color: var(--main-color);
 }
 
+.burger-btn {
+  width: 40px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.burger-btn > span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+  border-radius: 1px;
+}
+
+.burger-btn > span:nth-child(2) {
+  width: 80%;
+  margin-left: auto;
+}
+
+.burger-menu__list {
+  display: flex;
+  transition: all 0.3s ease-in;
+  padding: 30px 10px;
+  flex-direction: column;
+  position: fixed;
+  flex-direction: column;
+  gap: 25px;
+  background-color: white;
+  left: 100%;
+  width: 100vw;
+  top: 110px;
+  height: 100vh;
+  z-index: 999;
+}
+
+.burger-menu__list.active {
+  background-color: white;
+  left: 0;
+}
+
+.burger-menu__link {
+  justify-content: start;
+}
+
+.menu__main-item {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
 .location__box {
   display: flex;
   align-items: center;
@@ -185,8 +242,22 @@ button {
   gap: 10px;
 }
 
+
+.burger-location__box{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  display: none;
+}
+
+
 .location__title {
   text-decoration: underline;
+}
+
+.burger-header__phone{
+  display: none;
 }
 
 .login {
@@ -194,6 +265,14 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.burger-login{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  display: none;
 }
 
 /* header-main */
@@ -861,6 +940,10 @@ footer {
   .footer__logo {
     display: none;
   }
+
+  .burger-btn {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -1020,6 +1103,16 @@ footer {
   .header__phone {
     display: none;
   }
+  .burger-location__box{
+    display: flex;
+  }
+  .burger-login{
+    display: flex;
+  }
+  .burger-header__phone{
+    display: block;
+  }
+
   .header-main__inner {
     padding-top: 0;
   }
@@ -1055,6 +1148,10 @@ footer {
   .reviews {
     margin-bottom: 25px;
   }
+
+  .burger-btn > span {
+    background-color: white;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -1077,11 +1174,11 @@ footer {
     font-size: 14px;
   }
 
-  .rights{
+  .rights {
     margin-bottom: 20px;
   }
 
-  .info__row{
+  .info__row {
     justify-content: start;
   }
 }

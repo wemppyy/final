@@ -45,7 +45,27 @@ catalog.forEach((element) => {
       i.classList.remove("active");
     });
     element.classList.add("active");
-  filter(element.getAttribute("data-type"));
-
+    filter(element.getAttribute("data-type"));
   };
 });
+
+const burgerBtn = document.getElementById("burger-btn");
+const burgerMenu = document.getElementById("burger-menu");
+const body = document.body;
+const aboutBtn = document.getElementById("about");
+const cardsBtn = document.getElementById("cardsLink");
+
+burgerBtn.onclick = function () {
+  burgerMenu.classList.toggle("active");
+  body.classList.toggle("overflow-hide");
+};
+
+cardsBtn.onclick = function () {
+  burgerMenu.classList.toggle("active");
+  body.classList.toggle("overflow-hide");
+};
+
+aboutBtn.onclick = function () {
+  burgerMenu.classList.toggle("active");
+  body.classList.toggle("overflow-hide");
+};
