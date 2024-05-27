@@ -279,7 +279,7 @@ body.overflow-hide {
 
 .header-main {
   height: 480px;
-  background-image: url(/images/header/header_bg.jpg);
+  background-image: url("../images/header/header_bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -332,7 +332,7 @@ body.overflow-hide {
 }
 
 .message-box__text {
-  background-image: url(/images/message-box.svg);
+  background-image: url("../images/message-box.svg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 260px;
@@ -607,7 +607,7 @@ body.overflow-hide {
 /* reviews */
 
 .reviews {
-  background-image: url(/images/reviews/reviews_bg.jpg);
+  background-image: url("../images/reviews/reviews_bg.jpg");
   height: 600px;
   margin-bottom: 85px;
 }
@@ -825,7 +825,7 @@ footer {
 .help-box__img {
   margin-right: 50px;
   margin-left: auto;
-  background-image: url("/images/message-box2.svg");
+  background-image: url("../images/message-box2.svg");
   width: 421px;
   background-repeat: no-repeat;
   background-size: cover;
