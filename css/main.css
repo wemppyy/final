@@ -242,8 +242,7 @@ body.overflow-hide {
   gap: 10px;
 }
 
-
-.burger-location__box{
+.burger-location__box {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -251,12 +250,11 @@ body.overflow-hide {
   display: none;
 }
 
-
 .location__title {
   text-decoration: underline;
 }
 
-.burger-header__phone{
+.burger-header__phone {
   display: none;
 }
 
@@ -267,7 +265,7 @@ body.overflow-hide {
   gap: 10px;
 }
 
-.burger-login{
+.burger-login {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -287,6 +285,7 @@ body.overflow-hide {
 }
 
 .header-main__inner {
+  align-items: center;
   padding-top: 126px;
   display: flex;
   flex-direction: column;
@@ -303,6 +302,10 @@ body.overflow-hide {
 .header-main__text {
   font-weight: 500;
   font-size: 20px;
+}
+
+.header-main__content {
+  width: 100%;
 }
 
 /* main */
@@ -901,6 +904,10 @@ footer {
 }
 
 .header-main__image {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 400px;
   display: none;
 }
 
@@ -944,6 +951,32 @@ footer {
   .burger-btn {
     display: flex;
   }
+  .catalog__list {
+    font-size: 16px;
+  }
+  .logo__img {
+    width: 85px;
+  }
+  .header-line__inner {
+    height: 95px;
+  }
+  .burger-menu__list {
+    top: 95px;
+  }
+  .burger-btn {
+    width: 37px;
+    height: 16px;
+  }
+
+  .info__title {
+    font-size: 22px;
+  }
+  .info__column-title {
+    font-size: 75px;
+  }
+  .reviews__title {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -956,11 +989,6 @@ footer {
       "try-it try-it try-it";
 
     grid-template-rows: repeat(5, 1fr);
-  }
-
-  .catalog__row {
-    justify-content: flex-start;
-    flex-wrap: wrap;
   }
 
   .bg {
@@ -1002,7 +1030,7 @@ footer {
   }
 
   .info__inner {
-    margin-top: 400px;
+    margin-top: 200px;
   }
 
   .info__row {
@@ -1029,7 +1057,7 @@ footer {
     margin-bottom: 450px;
   }
   .header-main__inner {
-    padding-top: 30px;
+    padding-top: 0;
     gap: 0;
     max-width: 100%;
   }
@@ -1064,9 +1092,56 @@ footer {
   .benefits__title {
     font-size: 24px;
   }
+  .catalog__list {
+    font-size: 14px;
+  }
+  .catalog__row-title {
+    font-size: 15px;
+  }
+  .logo__img {
+    width: 75px;
+  }
+  .header-line__inner {
+    height: 80px;
+  }
+  .burger-menu__list {
+    top: 80px;
+  }
+  .burger-btn {
+    width: 34px;
+    height: 14px;
+  }
+  .catalog {
+    padding-top: 36px;
+  }
+  .video > .container > iframe {
+    margin-top: 192px;
+  }
+
+  .info__title {
+    font-size: 20px;
+  }
+
+  .info__column-title {
+    font-size: 70px;
+  }
+  .reviews__title {
+    font-size: 27px;
+  }
 }
 
 @media screen and (max-width: 610px) {
+  .catalog__row-column {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+  .catalog__row-column > p {
+    gap: 5px;
+  }
+  .catalog__row-column {
+    padding: 0 10px 15px;
+  }
   .help-box__img {
     display: none;
   }
@@ -1087,9 +1162,15 @@ footer {
   }
 
   .info__inner {
-    margin-top: 500px;
+    margin-top: 320px;
   }
 
+  .info__title {
+    font-size: 18px;
+  }
+  .info__column-title {
+    font-size: 64px;
+  }
   .menu {
     display: none;
   }
@@ -1103,13 +1184,13 @@ footer {
   .header__phone {
     display: none;
   }
-  .burger-location__box{
+  .burger-location__box {
     display: flex;
   }
-  .burger-login{
+  .burger-login {
     display: flex;
   }
-  .burger-header__phone{
+  .burger-header__phone {
     display: block;
   }
 
@@ -1135,7 +1216,7 @@ footer {
   }
 
   .video > .container > iframe {
-    margin-top: 450px;
+    margin-top: 300px;
     height: 300px;
   }
   .benefits__title {
@@ -1152,18 +1233,49 @@ footer {
   .burger-btn > span {
     background-color: white;
   }
+  .catalog__list {
+    font-size: 12px;
+  }
+  .catalog__row-title {
+    font-size: 14px;
+  }
+  .logo__img {
+    width: 57px;
+  }
+  .header-line__inner {
+    height: 60px;
+  }
+  .burger-menu__list {
+    top: 60px;
+  }
+  .burger-btn {
+    width: 30px;
+    height: 12px;
+  }
+  .header-main__image {
+    height: 200px;
+  }
+  .header-main__content {
+    height: 136px;
+  }
+  .reviews__title {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .video > .container > iframe {
     height: 200px;
-    margin-top: 550px;
+    margin-top: 450px;
   }
 
   .catalog__row {
     justify-content: center;
   }
 
+  .info__inner {
+    margin-top: 400px;
+  }
   .catalog__row-column {
     width: 100%;
   }
