@@ -247,6 +247,7 @@ body.overflow-hide {
   align-items: center;
   justify-content: start;
   gap: 10px;
+  margin-top: 25px;
   display: none;
 }
 
@@ -255,7 +256,10 @@ body.overflow-hide {
 }
 
 .burger-header__phone {
+  font-size: 18px;
+  font-weight: 600;
   display: none;
+  margin-top: 25px;
 }
 
 .login {
@@ -625,16 +629,15 @@ body.overflow-hide {
 }
 
 .reviews__row {
-
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 30px;
 }
 
-.reviews__row-inner{
+.reviews__row-inner {
   gap: 20px;
   padding: 0 10px;
-  overflow: hidden;
+  overflow: auto;
   display: flex;
 }
 

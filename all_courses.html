@@ -107,7 +107,7 @@
                   <a href="#" class="menu__link"> Заходи </a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link"> Бази знань </a>
+                  <a href="#" class="menu__link"> Новини </a>
                 </li>
                 <li class="menu__item">
                   <a href="#" class="menu__link"> Кар'єра </a>
@@ -213,9 +213,7 @@
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link burger-menu__link">
-                  Бази знань
-                </a>
+                <a href="#" class="menu__link burger-menu__link"> Новини </a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link burger-menu__link"> Кар'єра </a>
@@ -251,6 +249,10 @@
       </div>
     </header>
     <main>
+      <div class="filter__burger">
+        <img src="images/filter.svg" alt="filter" />
+        <p>Фільтри</p>
+      </div>
       <div class="container">
         <h1 class="title__inner">Усі програми навчання</h1>
 
@@ -589,166 +591,355 @@
             </ul>
           </section>
           <aside class="filter">
-            <div class="filter__line first"></div>
-            <form class="filter__form filter__level">
-              <div class="aside__title filter__level-title">Уровень сложности</div>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level1"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
+            <form class="filter__inner">
+              <div class="filter__line first"></div>
+              <div class="filter__form">
+                <div class="filter__title">Уровень сложности</div>
+                <label class="filter__label">
+                  <input
+                    type="radio"
+                    class="filter__radio"
+                    name="level"
+                    value="level1"
+                    checked
+                  />
+                  <div class="filter__circle">
+                    <div class="filter__circle-inner"></div>
+                  </div>
+                  <p class="filter__text">Новичок</p>
+                </label>
+                <label class="filter__label">
+                  <input
+                    type="radio"
+                    class="filter__radio"
+                    name="level"
+                    value="level2"
+                  />
+                  <div class="filter__circle">
+                    <div class="filter__circle-inner"></div>
+                  </div>
+                  <p class="filter__text">Пользователь</p>
+                </label>
+                <label class="filter__label">
+                  <input
+                    type="radio"
+                    class="filter__radio"
+                    name="level"
+                    value="level3"
+                  />
+                  <div class="filter__circle">
+                    <div class="filter__circle-inner"></div>
+                  </div>
+                  <p class="filter__text">Профессионал</p>
+                </label>
+                <label class="filter__label">
+                  <input
+                    type="radio"
+                    class="filter__radio"
+                    name="level"
+                    value="level4"
+                  />
+                  <div class="filter__circle">
+                    <div class="filter__circle-inner"></div>
+                  </div>
+                  <p class="filter__text">Читер</p>
+                </label>
+              </div>
+              <div class="filter__line"></div>
+              <div class="filter__form">
+                <div class="filter__title">Тип обучения</div>
+                <label class="filter__label">
+                  <input
+                    type="radio"
+                    class="filter__radio"
+                    name="type"
+                    value="type1"
+                    checked
+                  />
+                  <div class="filter__circle">
+                    <div class="filter__circle-inner"></div>
+                  </div>
+                  <p class="filter__text">Любой</p>
+                </label>
+                <label class="filter__label">
+                  <input
+                    type="radio"
+                    class="filter__radio"
+                    name="type"
+                    value="type2"
+                  />
+                  <div class="filter__circle">
+                    <div class="filter__circle-inner"></div>
+                  </div>
+                  <p class="filter__text">Профессия</p>
+                </label>
+                <label class="filter__label">
+                  <input
+                    type="radio"
+                    class="filter__radio"
+                    name="type"
+                    value="type3"
+                  />
+                  <div class="filter__circle">
+                    <div class="filter__circle-inner"></div>
+                  </div>
+                  <p class="filter__text">Курс</p>
+                </label>
+              </div>
+              <div class="filter__line"></div>
+              <div class="filter__form">
+                <div class="filter__title">Длительность</div>
+                <div class="filter__text">от 1 до 24 месяцев</div>
+                <div class="filter__time-text">
+                  <div class="filter__time-item filter__time--one"></div>
+                  <div class="filter__time-item filter__time--two"></div>
                 </div>
-                <p class="aside__text filter__level-text">Новичок</p>
-              </label>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level2"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
+                <div class="filter__range-box">
+                  <input
+                    type="range"
+                    min="1"
+                    max="24"
+                    value="18"
+                    class="filter__range-slider"
+                  />
+                  <input
+                    type="range"
+                    min="1"
+                    max="24"
+                    value="6"
+                    class="filter__range-slider"
+                  />
                 </div>
-                <p class="aside__text filter__level-text">Пользователь</p>
-              </label>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level3"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
-                </div>
-                <p class="aside__text filter__level-text">Профессионал</p>
-              </label>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level4"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
-                </div>
-                <p class="aside__text filter__level-text">Читер</p>
-              </label>
-            </form>
-            <div class="filter__form filter__line"></div>
-            <form class="filter__form filter__level">
-              <div class="aside__title filter__level-title">Уровень сложности</div>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level1"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
-                </div>
-                <p class="aside__text filter__level-text">Новичок</p>
-              </label>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level2"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
-                </div>
-                <p class="aside__text filter__level-text">Пользователь</p>
-              </label>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level3"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
-                </div>
-                <p class="aside__text filter__level-text">Профессионал</p>
-              </label>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level4"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
-                </div>
-                <p class="aside__text filter__level-text">Читер</p>
-              </label>
-            </form>
-            <div class="filter__form filter__line"></div>
-            <form class="filter__form filter__level">
-              <div class="aside__title filter__level-title">Уровень сложности</div>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level1"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
-                </div>
-                <p class="aside__text filter__level-text">Новичок</p>
-              </label>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level2"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
-                </div>
-                <p class="aside__text filter__level-text">Пользователь</p>
-              </label>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level3"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
-                </div>
-                <p class="aside__text filter__level-text">Профессионал</p>
-              </label>
-              <label class="aside__label filter__level-label">
-                <input
-                  type="radio"
-                  class="aside__radio filter__level-radio"
-                  name="level"
-                  value="level4"
-                />
-                <div class="aside__circle filter__level-circle">
-                  <div class="aside__circle-inner filter__circle-inner"></div>
-                </div>
-                <p class="aside__text filter__level-text">Читер</p>
-              </label>
+              </div>
+              <input type="submit" class="filter__submit" />
             </form>
           </aside>
         </div>
       </div>
+      <section class="help-box">
+        <div class="card-shadow help-box__inner">
+          <img
+            src="images/owl.svg"
+            alt="owl"
+            width="230"
+            class="help-box__owl"
+          />
+          <div class="help-box__img">
+            <span> Допомогти з вибором? </span>
+            <br />
+            Залиште заявку і наші фахівці зв'яжуться з вами, дадуть відповідь на
+            всі запитання і підберуть відповідний варіант навчання.
+          </div>
+          <form class="help-box__form">
+            <input
+              type="text"
+              placeholder="Ваше ім'я"
+              class="help-box__login"
+            />
+            <input
+              type="text"
+              placeholder="Ваш номер телефону"
+              class="help-box__phone"
+            />
+            <input
+              type="email"
+              placeholder="Ваш e-mail"
+              class="help-box__email"
+            />
+            <p class="help-box__form-text">
+              Нажимая на кнопку, я соглашаюсь на обработку персональных данных и
+              с правилами пользования Платформой
+            </p>
+            <input type="submit" class="help-box__btn" />
+          </form>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <img src="images/logo.svg" alt="logo" class="footer__logo" />
+            <a href="tel:8 800 950-33-98 " class="footer__phone-number"
+              >8 800 950-33-98
+            </a>
+            <div class="footer__location">г. Москва, ул. Ленина, д. 50</div>
+            <a href="email:info@hodfutureacademy.ru" class="footer__email"
+              >info@hodfutureacademy.ru</a
+            >
+            <div class="footer__socials">
+              <a href="#">
+                <img
+                  src="images/social/vk.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/social/instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/social/facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/social/yt.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/social/tg.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+
+            <div class="rights">© ХОД, Future Academy</div>
+          </div>
+          <div class="footer__row">
+            <div class="footer__column">
+              <div class="footer__colummn-title">Дітям</div>
+              <ul class="footer__column-list">
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Малювання та живопис</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Кулінарія та кондитерська справа</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Танці</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Шахи</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Розробка ігор</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Англійська мова</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <div class="footer__colummn-title">Підліткам</div>
+              <ul class="footer__column-list">
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Програмування на Python</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Основи фінансової грамотності</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Веб-дизайн</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Музичні інструменти (гітара, піаніно)</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Робототехніка</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"> Графічний дизайн</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">
+                    Історія та культура</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <div class="footer__colummn-title">Дорослим</div>
+              <ul class="footer__column-list">
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Штучний інтелект і машинне навчання</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Фотографія</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Йога і медитація</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Шахи</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Акторська майстерність</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Астрономія та космонавтика</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Фітнес і здоровий спосіб життя</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Психологія та самопізнання</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <div class="footer__colummn-title">Дорослим</div>
+              <ul class="footer__column-list">
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link"
+                    >Штучний інтелект і машинне навчання</a
+                  >
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Про академію</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Заходи</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Новини</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">База знань</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Кар'єра</a>
+                </li>
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/all_courses.js"></script>
   </body>
 </html>

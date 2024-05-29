@@ -57,3 +57,40 @@ catalog.forEach((element) => {
     filter(element.getAttribute("data-type"));
   };
 });
+
+const filterRangeSliders = document.querySelectorAll(".filter__range-slider");
+const minValText = document.querySelector(".filter__time--one");
+const maxValText = document.querySelector(".filter__time--two");
+
+maxValText.textContent = filterRangeSliders[0].value;
+minValText.textContent = filterRangeSliders[1].value;
+
+filterRangeSliders[0].onclick = () => {
+  if (
+    parseInt(filterRangeSliders[0].value) <=
+    parseInt(filterRangeSliders[1].value)
+  ) {
+    filterRangeSliders[0].value = parseInt(filterRangeSliders[1].value) + 1;
+    maxValText.textContent = filterRangeSliders[0].value;
+  } else {
+    maxValText.textContent = filterRangeSliders[0].value;
+  }
+};
+filterRangeSliders[1].onclick = () => {
+  if (
+    parseInt(filterRangeSliders[1].value) >=
+    parseInt(filterRangeSliders[0].value)
+  ) {
+    filterRangeSliders[1].value = parseInt(filterRangeSliders[0].value) - 1;
+    maxValText.textContent = filterRangeSliders[1].value;
+  } else {
+    minValText.textContent = filterRangeSliders[1].value;
+  }
+};
+
+const filterBtn = document.querySelector(".filter__burger");
+const filterBox = document.querySelector(".filter");
+
+filterBtn.onclick = () => {
+  filterBox.classList.toggle("active");
+};
