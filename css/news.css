@@ -304,6 +304,70 @@ body.overflow {
   margin-top: 36px;
 }
 
+/* main */
+
+.title {
+  padding: 4% 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.news {
+  margin-bottom: 330px;
+}
+
+.news__list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #fff;
+}
+
+.news__item {
+  border-radius: 20px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #f7951d5e;
+}
+
+.news__item-img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.news__item-date {
+  margin-top: 21px;
+  font-size: 12px;
+  padding: 0 30px;
+}
+
+.news__item-title {
+  margin-top: 21px;
+  font-size: 18px;
+  padding: 0 30px;
+  font-weight: 500;
+}
+
+.news__item-text {
+  margin-top: 21px;
+  font-size: 12px;
+  color: #4f4f4f;
+  padding: 0 30px;
+  height: 90px;
+}
+
+.news__item-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 10px;
+  padding: 0 30px;
+  margin-top: 2px;
+  margin-bottom: 33px;
+}
+
 /* footer */
 
 footer {
@@ -480,6 +544,12 @@ footer {
   display: none;
 }
 
+/* @media screen and (max-width: 1220px) {
+  .news__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
 @media screen and (max-width: 1020px) {
   .help-box__inner {
     flex-direction: column;
@@ -522,6 +592,12 @@ footer {
     width: 37px;
     height: 16px;
   }
+  .news {
+    margin-bottom: 450px;
+  }
+  .title {
+    font-size: 32px;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -556,9 +632,20 @@ footer {
       "text text"
       "button button";
   }
+  
+  .news__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .title {
+    font-size: 26px;
+  }
 }
 
+
 @media screen and (max-width: 610px) {
+  .news__item{
+    max-width: 100%;
+  }
   .location__box {
     display: none;
   }
@@ -587,7 +674,18 @@ footer {
   .burger-header__phone {
     display: flex;
   }
+  .title {
+    font-size: 22px;
+  }
 }
 
+@media screen and (max-width: 500px) {
+  .news__list{
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 320px) {
+  .title {
+    font-size: 18px;
+  }
 }

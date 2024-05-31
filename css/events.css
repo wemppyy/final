@@ -304,6 +304,104 @@ body.overflow {
   margin-top: 36px;
 }
 
+/* main */
+
+main {
+  padding-top: 40px;
+  padding-bottom: 330px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.events {
+  display: grid;
+  grid-template-areas:
+    "item1 item2 item3"
+    "item4 item4 item5"
+    "item6 item7 item8";
+  gap: 20px;
+}
+
+.events__item.item1 {
+  background-color: var(--blue);
+  grid-area: item1;
+}
+.events__item.item2 {
+  background-color: var(--yellow);
+  grid-area: item2;
+}
+.events__item.item3 {
+  background-color: var(--purple);
+
+  grid-area: item3;
+}
+.events__item.item4 {
+  background-color: var(--green);
+
+  grid-area: item4;
+}
+.events__item.item5 {
+  background-image: url("/images/event_bg.jpg");
+  grid-area: item5;
+}
+.events__item.item5 * {
+  color: #fff;
+}
+
+.events__item-icon path {
+  fill: white;
+}
+
+.events__item.item6 {
+  background-color: var(--blue);
+  grid-area: item6;
+}
+.events__item.item7 {
+  background-color: var(--pink);
+  grid-area: item7;
+}
+.events__item.item8 {
+  background-color: var(--orange);
+  grid-area: item8;
+}
+
+.events__item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 28px 30px;
+}
+
+.events__item-type {
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.events__item-row {
+  align-items: center;
+  display: flex;
+  gap: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #00093c;
+  margin-bottom: 20px;
+}
+
+.events__item-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #4f4f4f;
+  margin-bottom: 17px;
+}
+
+.events__item-date {
+  font-size: 12px;
+}
+
 /* footer */
 
 footer {
@@ -375,7 +473,7 @@ footer {
 .help-box {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -85%);
+  transform: translate(-50%, 35%);
 }
 
 .help-box__inner {
@@ -522,6 +620,13 @@ footer {
     width: 37px;
     height: 16px;
   }
+
+  .help-box {
+    transform: translate(-50%, 15%);
+  }
+  main {
+    padding-bottom: 500px;
+  }
 }
 
 @media screen and (max-width: 840px) {
@@ -556,6 +661,18 @@ footer {
       "text text"
       "button button";
   }
+
+  .events {
+    grid-template-areas:
+      "item1 item2"
+      "item3 item5"
+      "item4 item4"
+      "item6 item7"
+      "item8 .";
+  }
+  .help-box {
+    transform: translate(-50%, 40%);
+  }
 }
 
 @media screen and (max-width: 610px) {
@@ -586,6 +703,17 @@ footer {
   }
   .burger-header__phone {
     display: flex;
+  }
+  .events {
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item5"
+      "item4"
+      "item6"
+      "item7"
+      "item8";
   }
 }
 
