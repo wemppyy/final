@@ -999,6 +999,9 @@ footer {
   .burger-header__phone {
     display: flex;
   }
+  .burger-login{
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 320px) {

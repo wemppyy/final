@@ -682,7 +682,7 @@ footer {
 
   .help-box__owl {
     display: none;
-  }
+  } 
   .help-box__form {
     width: 100%;
     height: 100%;
@@ -735,6 +735,9 @@ footer {
   }
 
   .burger-location__box {
+    display: flex;
+  }
+  .burger-login{
     display: flex;
   }
 
