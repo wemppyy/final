@@ -771,6 +771,10 @@ footer {
     display: none;
   }
 
+  .events__item.item5{
+    height: 220px;
+  }
+
   .location__box {
     display: none;
   }
