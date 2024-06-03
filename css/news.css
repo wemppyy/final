@@ -652,6 +652,11 @@ footer {
   .login {
     display: none;
   }
+  .burger-menu__list .login{
+    display: flex;
+    justify-content: start;
+  }
+  
   .header__phone {
     display: none;
   }

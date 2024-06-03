@@ -422,12 +422,11 @@ main {
   text-align: center;
   padding: 12px 0;
   width: 180px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   border-radius: 6px;
   background-color: var(--main-orange);
   color: white;
 }
-
 
 /* footer */
 
@@ -684,7 +683,6 @@ footer {
   .help-box__owl {
     display: none;
   }
-
   .help-box__form {
     width: 100%;
     height: 100%;
@@ -705,6 +703,14 @@ footer {
 
   .login {
     display: none;
+  }
+
+  .login__form{
+    width: 80%;
+  }
+
+  .login__input {
+    width: 100%;
   }
 
   .header__phone {
