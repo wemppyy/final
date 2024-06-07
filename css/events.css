@@ -52,7 +52,7 @@
 
 .list-shadow {
   position: relative;
-  background-color: white;
+  background-color: #fff;
 }
 
 .list-shadow:before {
