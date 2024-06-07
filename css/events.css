@@ -359,7 +359,7 @@ main {
 }
 
 .events__item.item5 {
-  background-image: url("/images/event_bg.jpg");
+  background-image: url("../images/event_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

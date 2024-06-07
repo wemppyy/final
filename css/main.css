@@ -461,12 +461,14 @@ body.overflow-hide {
 
 .info__row {
   display: flex;
-  gap: 122px;
+  /* gap: 122px; */
+  justify-content: space-between;
   margin-top: 42px;
 }
 .info__column-title {
   font-size: 85px;
   font-weight: 700;
+  letter-spacing: 0.1em;
 
   background: -webkit-linear-gradient(0deg, #f7941d 0%, #27aae1 100%);
   -webkit-background-clip: text;
@@ -474,9 +476,12 @@ body.overflow-hide {
   color: white;
   margin-bottom: 10px;
 }
+/* 
+.info__column {
+  width: 340px;
+} */
 
 .info__column-text {
-  width: 100px;
   font-weight: 500;
   font-size: 20px;
 }
@@ -1041,9 +1046,9 @@ footer {
 
   .info__row {
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
-    align-items: center;
+    align-items: start;
   }
 
   .benefits__list {
