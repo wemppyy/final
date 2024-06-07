@@ -69,3 +69,5 @@ aboutBtn.onclick = function () {
   burgerMenu.classList.toggle("active");
   body.classList.toggle("overflow-hide");
 };
+
+

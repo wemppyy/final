@@ -1,680 +1,1020 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <header>
-    <div class="header-line">
-      <div class="container">
-        <div class="header-line__inner" id="header-line">
-          <a href="index.html" class="logo">
-            <img src="images/logo.svg" alt="logo" class="logo__img" />
-          </a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="all_courses.html" class="menu__link">
-                  <span class="menu__link-icon">
-                    <span></span>
-                    <span></span>
-                  </span>
-                  <span> Всі курси </span>
+  <body>
+    <div class="location-menu">
+      <a href="#" class="location-item vinnytsia">
+        <svg
+          class="location__img"
+          width="17"
+          height="20"
+          viewBox="0 0 17 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 8.5C16 11.3282 14.13 13.9545 12.0535 15.9699C11.036 16.9575 10.0146 17.754 9.24613 18.304C8.95504 18.5123 8.70155 18.6843 8.5 18.8171C8.29845 18.6843 8.04496 18.5123 7.75387 18.304C6.98537 17.754 5.96395 16.9575 4.94648 15.9699C2.86999 13.9545 1 11.3282 1 8.5C1 4.35786 4.35786 1 8.5 1C12.6421 1 16 4.35786 16 8.5Z"
+            stroke="#00093C"
+            stroke-width="2"
+          />
+          <circle cx="8.5" cy="7.5" r="2.5" fill="#00093C" />
+        </svg>
+        <div class="location-text">Вінниця</div>
+      </a>
+      <a href="#" class="location-item lviv">
+        <svg
+          class="location__img"
+          width="17"
+          height="20"
+          viewBox="0 0 17 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 8.5C16 11.3282 14.13 13.9545 12.0535 15.9699C11.036 16.9575 10.0146 17.754 9.24613 18.304C8.95504 18.5123 8.70155 18.6843 8.5 18.8171C8.29845 18.6843 8.04496 18.5123 7.75387 18.304C6.98537 17.754 5.96395 16.9575 4.94648 15.9699C2.86999 13.9545 1 11.3282 1 8.5C1 4.35786 4.35786 1 8.5 1C12.6421 1 16 4.35786 16 8.5Z"
+            stroke="#00093C"
+            stroke-width="2"
+          />
+          <circle cx="8.5" cy="7.5" r="2.5" fill="#00093C" />
+        </svg>
+        <div class="location-text">Львів</div>
+      </a>
+      <a href="#" class="location-item online">
+        <svg
+          class="location__img"
+          width="17"
+          height="20"
+          viewBox="0 0 17 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 8.5C16 11.3282 14.13 13.9545 12.0535 15.9699C11.036 16.9575 10.0146 17.754 9.24613 18.304C8.95504 18.5123 8.70155 18.6843 8.5 18.8171C8.29845 18.6843 8.04496 18.5123 7.75387 18.304C6.98537 17.754 5.96395 16.9575 4.94648 15.9699C2.86999 13.9545 1 11.3282 1 8.5C1 4.35786 4.35786 1 8.5 1C12.6421 1 16 4.35786 16 8.5Z"
+            stroke="#00093C"
+            stroke-width="2"
+          />
+          <circle cx="8.5" cy="7.5" r="2.5" fill="#00093C" />
+        </svg>
+        <div class="location-text">Онлайн</div>
+      </a>
+    </div>
+    <div class="wrapper">
+      <header>
+        <div class="header-line">
+          <div class="container">
+            <div class="header-line__inner" id="header-line">
+              <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="logo" class="logo__img" />
+              </a>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="all_courses.html" class="menu__link">
+                      <span class="menu__link-icon">
+                        <span></span>
+                        <span></span>
+                      </span>
+                      <span> Всі курси </span>
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="events.html" class="menu__link"> Заходи </a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="news.html" class="menu__link"> Новини </a>
+                  </li>
+                </ul>
+              </nav>
+              <a class="location__box" href="#">
+                <img
+                  src="images/header/location.svg"
+                  alt="location"
+                  class="location__img"
+                />
+                <span class="location__title">Вінниця</span>
+                <img
+                  src="images/arrow_down.svg"
+                  alt="arrow"
+                  class="location__arrow"
+                />
+              </a>
+              <a href="tel:88009503398" class="header__phone"
+                >8 800 950-33-98
+              </a>
+              <a href="login.html" class="login">
+                <img
+                  src="images/header/user.svg"
+                  alt="user"
+                  class="login__icon"
+                />
+                <span> Увійти </span>
+              </a>
+              <button class="burger-btn" id="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul class="burger-menu__list" id="burger-menu">
+                <li class="menu__item menu__main-item">
+                  <a
+                    href="all_courses.html"
+                    class="menu__link burger-menu__link"
+                  >
+                    <span class="menu__link-icon">
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span> Всі курси </span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#benefits"
+                    class="menu__link burger-menu__link"
+                    id="about"
+                  >
+                    Про академію
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="events.html"
+                    class="menu__link burger-menu__link"
+                    id="cardsLink"
+                  >
+                    Заходи
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="news.html" class="menu__link burger-menu__link">
+                    Новини
+                  </a>
+                </li>
+                <a class="burger-location__box" href="#">
+                  <img
+                    src="images/header/location.svg"
+                    alt="location"
+                    class="location__img"
+                  />
+                  <span class="location__title">Вінниця</span>
+                  <img
+                    src="images/arrow_down.svg"
+                    alt="arrow"
+                    class="location__arrow"
+                  />
                 </a>
-              </li>
-              <li class="menu__item">
-                <a href="events.html" class="menu__link"> Заходи </a>
-              </li>
-              <li class="menu__item">
-                <a href="news.html" class="menu__link"> Новини </a>
-              </li>
-            </ul>
-          </nav>
-          <a class="location__box" href="#">
-            <img src="images/header/location.svg" alt="location" class="location__img" />
-            <span class="location__title">Вінниця</span>
-            <img src="images/arrow_down.svg" alt="arrow" class="location__arrow" />
-          </a>
-          <a href="tel:88009503398" class="header__phone">8 800 950-33-98 </a>
-          <a href="login.html" class="login">
-            <img src="images/header/user.svg" alt="user" class="login__icon" />
-            <span> Увійти </span>
-          </a>
-          <button class="burger-btn" id="burger-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <ul class="burger-menu__list" id="burger-menu">
-            <li class="menu__item menu__main-item">
-              <a href="all_courses.html" class="menu__link burger-menu__link">
-                <span class="menu__link-icon">
-                  <span></span>
-                  <span></span>
-                </span>
-                <span> Всі курси </span>
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="#benefits" class="menu__link burger-menu__link" id="about">
-                Про академію
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="events.html" class="menu__link burger-menu__link" id="cardsLink">
-                Заходи
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="news.html" class="menu__link burger-menu__link">
-                Новини
-              </a>
-            </li>
-            <a class="burger-location__box" href="#">
-              <img src="images/header/location.svg" alt="location" class="location__img" />
-              <span class="location__title">Вінниця</span>
-              <img src="images/arrow_down.svg" alt="arrow" class="location__arrow" />
-            </a>
 
-            <a href="login.html" class="burger-login">
-              <img src="images/header/user.svg" alt="user" class="login__icon" />
-              <span> Увійти </span>
-            </a>
-            <a href="tel:88009503398" class="burger-header__phone">8 800 950-33-98
-            </a>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="header-main">
-      <div class="container header-main__container">
-        <div class="header-main__inner">
-          <img src="images/header/header_bg2.jpg" alt="" class="header-main__image" />
-          <div class="header-main__content">
-            <h1 class="header-main__title">
-              Освітня платформа ХОД Future Academy
-            </h1>
-            <p class="header-main__text">
-              Актуальні знання для новачків і професіоналів
-            </p>
+                <a href="login.html" class="burger-login">
+                  <img
+                    src="images/header/user.svg"
+                    alt="user"
+                    class="login__icon"
+                  />
+                  <span> Увійти </span>
+                </a>
+                <a href="tel:88009503398" class="burger-header__phone"
+                  >8 800 950-33-98
+                </a>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="catalog">
-      <div class="container">
-        <div class="message-box">
-          <img src="images/owl.svg" alt="owl" class="message-box__img" />
-          <p class="message-box__text">
-            <span>Ким ви хочете стати?</span>
-            <br />
-            <br />
-            <br />
-            Настав час знайти себе і вибрати відповідний курс :&rpar;
-            <br />
-            <br />
-            <br />
-            Успіхів!
-          </p>
+        <div class="header-main">
+          <div class="container header-main__container">
+            <div class="header-main__inner">
+              <img
+                src="images/header/header_bg2.jpg"
+                alt=""
+                class="header-main__image"
+              />
+              <div class="header-main__content">
+                <h1 class="header-main__title">
+                  Освітня платформа ХОД Future Academy
+                </h1>
+                <p class="header-main__text">
+                  Актуальні знання для новачків і професіоналів
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="catalog__inner">
-          <div class="catalog__row" id="catalog">
-            <div class="catalog__row-column active" data-type="kid">
-              <img src="images/catalog/kids.svg" alt="" class="catalog__row-img" />
-              <p>
-                <span class="catalog__row-title">Діти</span>
-                <span class="catalog__row-text">6 — 14 років</span>
+      </header>
+      <main>
+        <section class="catalog">
+          <div class="container">
+            <div class="message-box">
+              <img src="images/owl.svg" alt="owl" class="message-box__img" />
+              <p class="message-box__text">
+                <span>Ким ви хочете стати?</span>
+                <br />
+                <br />
+                <br />
+                Настав час знайти себе і вибрати відповідний курс :&rpar;
+                <br />
+                <br />
+                <br />
+                Успіхів!
               </p>
             </div>
-            <div class="catalog__row-column" data-type="child">
-              <img src="images/catalog/children.svg" alt="" class="catalog__row-img" />
-              <p>
-                <span class="catalog__row-title">Подлітки</span>
-                <span class="catalog__row-text">14 — 18 років</span>
-              </p>
-            </div>
-            <div class="catalog__row-column" data-type="adult">
-              <img src="images/catalog/family.svg" alt="" class="catalog__row-img" />
-              <p>
-                <span class="catalog__row-title">Дорослі</span>
-                <span class="catalog__row-text">18 — ∞ років</span>
-              </p>
+            <div class="catalog__inner">
+              <div class="catalog__row" id="catalog">
+                <div class="catalog__row-column active" data-type="kid">
+                  <img
+                    src="images/catalog/kids.svg"
+                    alt=""
+                    class="catalog__row-img"
+                  />
+                  <p>
+                    <span class="catalog__row-title">Діти</span>
+                    <span class="catalog__row-text">6 — 14 років</span>
+                  </p>
+                </div>
+                <div class="catalog__row-column" data-type="child">
+                  <img
+                    src="images/catalog/children.svg"
+                    alt=""
+                    class="catalog__row-img"
+                  />
+                  <p>
+                    <span class="catalog__row-title">Подлітки</span>
+                    <span class="catalog__row-text">14 — 18 років</span>
+                  </p>
+                </div>
+                <div class="catalog__row-column" data-type="adult">
+                  <img
+                    src="images/catalog/family.svg"
+                    alt=""
+                    class="catalog__row-img"
+                  />
+                  <p>
+                    <span class="catalog__row-title">Дорослі</span>
+                    <span class="catalog__row-text">18 — ∞ років</span>
+                  </p>
+                </div>
+              </div>
+              <div class="catalog__line"></div>
+              <ul class="catalog__list">
+                <li class="btn-shadow catalog__item child">
+                  <a href="#" class="catalog__link">Програмування на Python</a>
+                </li>
+                <li class="btn-shadow catalog__item adult">
+                  <a href="#" class="catalog__link"
+                    >Штучний інтелект і машинне навчання</a
+                  >
+                </li>
+                <li class="btn-shadow catalog__item kid">
+                  <a href="#" class="catalog__link">Малювання та живопис</a>
+                </li>
+                <li class="btn-shadow catalog__item child">
+                  <a href="#" class="catalog__link"
+                    >Основи фінансової грамотності</a
+                  >
+                </li>
+                <li class="btn-shadow catalog__item adult">
+                  <a href="#" class="catalog__link">Фотографія</a>
+                </li>
+                <li class="btn-shadow catalog__item child">
+                  <a href="#" class="catalog__link">Веб-дизайн</a>
+                </li>
+                <li class="btn-shadow catalog__item adult">
+                  <a href="#" class="catalog__link">Йога і медитація</a>
+                </li>
+                <li class="btn-shadow catalog__item kid">
+                  <a href="#" class="catalog__link"
+                    >Кулінарія та кондитерська справа</a
+                  >
+                </li>
+                <li class="btn-shadow catalog__item child">
+                  <a href="#" class="catalog__link"
+                    >Музичні інструменти (гітара, піаніно)</a
+                  >
+                </li>
+                <li class="btn-shadow catalog__item adult">
+                  <a href="#" class="catalog__link">Акторська майстерність</a>
+                </li>
+                <li class="btn-shadow catalog__item kid">
+                  <a href="#" class="catalog__link">Танці</a>
+                </li>
+                <li class="btn-shadow catalog__item child">
+                  <a href="#" class="catalog__link">Робототехніка</a>
+                </li>
+                <li class="btn-shadow catalog__item kid">
+                  <a href="#" class="catalog__link">Шахи</a>
+                </li>
+                <li class="btn-shadow catalog__item child">
+                  <a href="#" class="catalog__link">Графічний дизайн</a>
+                </li>
+                <li class="btn-shadow catalog__item adult">
+                  <a href="#" class="catalog__link"
+                    >Астрономія та космонавтика</a
+                  >
+                </li>
+                <li class="btn-shadow catalog__item kid">
+                  <a href="#" class="catalog__link">Розробка ігор</a>
+                </li>
+                <li class="btn-shadow catalog__item child">
+                  <a href="#" class="catalog__link">Історія та культура</a>
+                </li>
+                <li class="btn-shadow catalog__item adult">
+                  <a href="#" class="catalog__link"
+                    >Фітнес і здоровий спосіб життя</a
+                  >
+                </li>
+                <li class="btn-shadow catalog__item adult">
+                  <a href="#" class="catalog__link"
+                    >Психологія та самопізнання</a
+                  >
+                </li>
+                <li class="btn-shadow catalog__item kid">
+                  <a href="#" class="catalog__link">Англійська мова</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="catalog__line"></div>
-          <ul class="catalog__list">
-            <li class="btn-shadow catalog__item child">
-              <a href="#" class="catalog__link">Програмування на Python</a>
-            </li>
-            <li class="btn-shadow catalog__item adult">
-              <a href="#" class="catalog__link">Штучний інтелект і машинне навчання</a>
-            </li>
-            <li class="btn-shadow catalog__item kid">
-              <a href="#" class="catalog__link">Малювання та живопис</a>
-            </li>
-            <li class="btn-shadow catalog__item child">
-              <a href="#" class="catalog__link">Основи фінансової грамотності</a>
-            </li>
-            <li class="btn-shadow catalog__item adult">
-              <a href="#" class="catalog__link">Фотографія</a>
-            </li>
-            <li class="btn-shadow catalog__item child">
-              <a href="#" class="catalog__link">Веб-дизайн</a>
-            </li>
-            <li class="btn-shadow catalog__item adult">
-              <a href="#" class="catalog__link">Йога і медитація</a>
-            </li>
-            <li class="btn-shadow catalog__item kid">
-              <a href="#" class="catalog__link">Кулінарія та кондитерська справа</a>
-            </li>
-            <li class="btn-shadow catalog__item child">
-              <a href="#" class="catalog__link">Музичні інструменти (гітара, піаніно)</a>
-            </li>
-            <li class="btn-shadow catalog__item adult">
-              <a href="#" class="catalog__link">Акторська майстерність</a>
-            </li>
-            <li class="btn-shadow catalog__item kid">
-              <a href="#" class="catalog__link">Танці</a>
-            </li>
-            <li class="btn-shadow catalog__item child">
-              <a href="#" class="catalog__link">Робототехніка</a>
-            </li>
-            <li class="btn-shadow catalog__item kid">
-              <a href="#" class="catalog__link">Шахи</a>
-            </li>
-            <li class="btn-shadow catalog__item child">
-              <a href="#" class="catalog__link">Графічний дизайн</a>
-            </li>
-            <li class="btn-shadow catalog__item adult">
-              <a href="#" class="catalog__link">Астрономія та космонавтика</a>
-            </li>
-            <li class="btn-shadow catalog__item kid">
-              <a href="#" class="catalog__link">Розробка ігор</a>
-            </li>
-            <li class="btn-shadow catalog__item child">
-              <a href="#" class="catalog__link">Історія та культура</a>
-            </li>
-            <li class="btn-shadow catalog__item adult">
-              <a href="#" class="catalog__link">Фітнес і здоровий спосіб життя</a>
-            </li>
-            <li class="btn-shadow catalog__item adult">
-              <a href="#" class="catalog__link">Психологія та самопізнання</a>
-            </li>
-            <li class="btn-shadow catalog__item kid">
-              <a href="#" class="catalog__link">Англійська мова</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="video">
-      <div class="container">
-        <iframe src="https://www.youtube.com/embed/Ptc8uDaO8vY" title="Знайомство з ІT STEP SCHOOL" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <img src="images/main_bg.svg" alt="bg" class="bg" />
-      </div>
-    </section>
-    <section class="info">
-      <div class="container">
-        <div class="info__inner">
-          <h2 class="info__title">
-            Актуальні знання від визнаних експертів ринку для новачків і
-            практикуючих фахівців практикуючих фахівців.
-          </h2>
-          <div class="info__row">
-            <div class="info__column">
-              <div class="info__column-title">600</div>
-              <div class="info__column-text">Курсів</div>
-            </div>
-            <div class="info__column">
-              <div class="info__column-title">82</div>
-              <div class="info__column-text">Провідних викладачів</div>
-            </div>
-            <div class="info__column">
-              <div class="info__column-title">14 795</div>
-              <div class="info__column-text">Випускників</div>
-            </div>
+        </section>
+        <section class="video">
+          <div class="container">
+            <iframe
+              src="https://www.youtube.com/embed/Ptc8uDaO8vY"
+              title="Знайомство з ІT STEP SCHOOL"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <img src="images/main_bg.svg" alt="bg" class="bg" />
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="cards" id="cards">
-      <div class="container">
-        <div class="cards__inner">
-          <div class="list-shadow cards__item open-doors">
-            <span class="cards__date">
-              <span class="cards__date-title">25</span>
-              <span class="cards__date-text">листопада</span>
-            </span>
-            <div class="cards__text">
-              <div class="cards__title">День відкритих дверей</div>
-              <div class="cards__sub-text">
-                Запрошуємо всіх охочих на безкоштовну екскурсію у світ
-                затребуваних професій і корисних навичок
+        </section>
+        <section class="info">
+          <div class="container">
+            <div class="info__inner">
+              <h2 class="info__title">
+                Актуальні знання від визнаних експертів ринку для новачків і
+                практикуючих фахівців практикуючих фахівців.
+              </h2>
+              <div class="info__row">
+                <div class="info__column">
+                  <div class="info__column-title">600</div>
+                  <div class="info__column-text">Курсів</div>
+                </div>
+                <div class="info__column">
+                  <div class="info__column-title">82</div>
+                  <div class="info__column-text">Провідних викладачів</div>
+                </div>
+                <div class="info__column">
+                  <div class="info__column-title">14 795</div>
+                  <div class="info__column-text">Випускників</div>
+                </div>
               </div>
             </div>
-            <button class="cards__btn">
-              <span>Записатися</span>
-              <img src="images/arrow_right.svg" alt="arrow" />
-            </button>
           </div>
-          <div class="list-shadow cards__item programms">
-            <img src="images/cards/monitor.svg" alt="monitor" class="cards__logo" />
-            <div class="cards__title">Програми навчання</div>
-            <div class="cards__sub-text">
-              У списку наших курсів ви зможете знайти професію і заняття до
-              душі душі, вивчити нове та отримати практичні знання, які
-              допоможуть отримати роботу мрії.
-            </div>
-            <button class="cards__btn">
-              <span>Детальніше</span>
-              <img src="images/arrow_right.svg" alt="arrow" />
-            </button>
-          </div>
-          <div class="list-shadow cards__item news">
-            <img src="images/cards/newspaper.svg" alt="monitor" class="cards__logo" />
-            <div class="cards__title">Новини Академії</div>
-          </div>
-          <div class="list-shadow cards__item it-world">
-            <img src="images/cards/diagram.svg" alt="monitor" class="cards__logo" />
-            <div class="cards__title">Світ IT</div>
-          </div>
-          <div class="list-shadow cards__item try-it">
-            <img src="images/cards/try-it_icon.svg" alt="monitor" class="cards__logo" />
+        </section>
+        <section class="cards" id="cards">
+          <div class="container">
+            <div class="cards__inner">
+              <div class="list-shadow cards__item open-doors">
+                <span class="cards__date">
+                  <span class="cards__date-title">25</span>
+                  <span class="cards__date-text">листопада</span>
+                </span>
+                <div class="cards__text">
+                  <div class="cards__title">День відкритих дверей</div>
+                  <div class="cards__sub-text">
+                    Запрошуємо всіх охочих на безкоштовну екскурсію у світ
+                    затребуваних професій і корисних навичок
+                  </div>
+                </div>
+                <button class="cards__btn">
+                  <span>Записатися</span>
+                  <img src="images/arrow_right.svg" alt="arrow" />
+                </button>
+              </div>
+              <div class="list-shadow cards__item programms">
+                <img
+                  src="images/cards/monitor.svg"
+                  alt="monitor"
+                  class="cards__logo"
+                />
+                <div class="cards__title">Програми навчання</div>
+                <div class="cards__sub-text">
+                  У списку наших курсів ви зможете знайти професію і заняття до
+                  душі душі, вивчити нове та отримати практичні знання, які
+                  допоможуть отримати роботу мрії.
+                </div>
+                <button class="cards__btn">
+                  <span>Детальніше</span>
+                  <img src="images/arrow_right.svg" alt="arrow" />
+                </button>
+              </div>
+              <div class="list-shadow cards__item news">
+                <img
+                  src="images/cards/newspaper.svg"
+                  alt="monitor"
+                  class="cards__logo"
+                />
+                <div class="cards__title">Новини Академії</div>
+              </div>
+              <div class="list-shadow cards__item it-world">
+                <img
+                  src="images/cards/diagram.svg"
+                  alt="monitor"
+                  class="cards__logo"
+                />
+                <div class="cards__title">Світ IT</div>
+              </div>
+              <div class="list-shadow cards__item try-it">
+                <img
+                  src="images/cards/try-it_icon.svg"
+                  alt="monitor"
+                  class="cards__logo"
+                />
 
-            <div class="cards__text">
-              <div class="cards__title">Спробуй!</div>
-              <div class="cards__sub-text">
-                Пройдіть тест і дізнайтеся свої здібності у сфері
-                інформаційних технологій
+                <div class="cards__text">
+                  <div class="cards__title">Спробуй!</div>
+                  <div class="cards__sub-text">
+                    Пройдіть тест і дізнайтеся свої здібності у сфері
+                    інформаційних технологій
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="reviews__inner">
-        <div class="reviews__title">Відгуки наших студентів</div>
-        <div class="reviews__row">
-          <div class="reviews__row-inner">
-            <div class="reviews__item">
-              <div class="reviews__item-info">
-                <img src="images/reviews/review1.png" alt="review" class="reviews__item-img" />
-                <span class="reviews__item-info-text">
-                  <span class="reviews__item-info-title">Ім'я Прізвище</span>
-                  <span class="reviews__item-info-sub-title">Студент курсу «WEB-розробник»</span>
-                </span>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                feugiat nisl at augue dapibus, id tristique lorem placerat.
-                Curabitur pellentesque est bibendum urna facilisis varius. In
-                hac habitasse platea dictumst. In ut dui sodales.
-              </div>
-              <div class="reviews__rate">
-                <img src="images/reviews/star.svg" alt="star" class="reviews__star-icon" />
-                <span class="reviews__rate-text">4,87 / 5</span>
-              </div>
-            </div>
-            <div class="reviews__item">
-              <div class="reviews__item-info">
-                <img src="images/reviews/review2.png" alt="review" class="reviews__item-img" />
-                <span class="reviews__item-info-text">
-                  <span class="reviews__item-info-title">Ім'я Прізвище</span>
-                  <span class="reviews__item-info-sub-title">Студент курсу «WEB-розробник»</span>
-                </span>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                feugiat nisl at augue dapibus, id tristique lorem placerat.
-                Curabitur pellentesque est bibendum urna facilisis varius.
-              </div>
-              <div class="reviews__rate">
-                <img src="images/reviews/star.svg" alt="star" class="reviews__star-icon" />
-                <span class="reviews__rate-text">4,87 / 5</span>
-              </div>
-            </div>
-            <div class="reviews__item">
-              <div class="reviews__item-info">
-                <img src="images/reviews/review3.png" alt="review" class="reviews__item-img" />
-                <span class="reviews__item-info-text">
-                  <span class="reviews__item-info-title">Ім'я Прізвище</span>
-                  <span class="reviews__item-info-sub-title">Студент курсу «WEB-розробник»</span>
-                </span>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                feugiat nisl at augue dapibus, id tristique lorem placerat.
-                Curabitur pellentesque est bibendum urna facilisis varius. In
-                hac habitasse platea dictumst. In ut dui sodales. Lorem ipsum
-                dolor sit amet.
-              </div>
-              <div class="reviews__rate">
-                <img src="images/reviews/star.svg" alt="star" class="reviews__star-icon" />
-                <span class="reviews__rate-text">4,87 / 5</span>
-              </div>
-            </div>
-            <div class="reviews__item">
-              <div class="reviews__item-info">
-                <img src="images/reviews/review3.png" alt="review" class="reviews__item-img" />
-                <span class="reviews__item-info-text">
-                  <span class="reviews__item-info-title">Ім'я Прізвище</span>
-                  <span class="reviews__item-info-sub-title">Студент курсу «WEB-розробник»</span>
-                </span>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                feugiat nisl at augue dapibus, id tristique lorem placerat.
-              </div>
-              <div class="reviews__rate">
-                <img src="images/reviews/star.svg" alt="star" class="reviews__star-icon" />
-                <span class="reviews__rate-text">4,87 / 5</span>
-              </div>
-            </div>
-            <div class="reviews__item">
-              <div class="reviews__item-info">
-                <img src="images/reviews/review4.png" alt="review" class="reviews__item-img" />
-                <span class="reviews__item-info-text">
-                  <span class="reviews__item-info-title">Ім'я Прізвище</span>
-                  <span class="reviews__item-info-sub-title">Студент курсу «WEB-розробник»</span>
-                </span>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                feugiat nisl at augue dapibus
-              </div>
-              <div class="reviews__rate">
-                <img src="images/reviews/star.svg" alt="star" class="reviews__star-icon" />
-                <span class="reviews__rate-text">4,87 / 5</span>
-              </div>
-            </div>
-            <div class="reviews__item">
-              <div class="reviews__item-info">
-                <img src="images/reviews/review5.png" alt="review" class="reviews__item-img" />
-                <span class="reviews__item-info-text">
-                  <span class="reviews__item-info-title">Ім'я Прізвище</span>
-                  <span class="reviews__item-info-sub-title">Студент курсу «WEB-розробник»</span>
-                </span>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                feugiat nisl at augue dapibus, id tristique lorem placerat.
-                Curabitur pellentesque est bibendum urna facilisis varius. In
-                hac habitasse platea dictumst. In ut dui sodales. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit.
-              </div>
-              <div class="reviews__rate">
-                <img src="images/reviews/star.svg" alt="star" class="reviews__star-icon" />
-                <span class="reviews__rate-text">4,87 / 5</span>
-              </div>
-            </div>
-            <div class="reviews__item">
-              <div class="reviews__item-info">
-                <img src="images/reviews/review1.png" alt="review" class="reviews__item-img" />
-                <span class="reviews__item-info-text">
-                  <span class="reviews__item-info-title">Ім'я Прізвище</span>
-                  <span class="reviews__item-info-sub-title">Студент курсу «WEB-розробник»</span>
-                </span>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                feugiat nisl at augue dapibus, id tristique lorem placerat.
-                Curabitur pellentesque est bibendum urna facilisis varius. In
-                hac habitasse platea dictumst. In ut dui sodales.
-              </div>
-              <div class="reviews__rate">
-                <img src="images/reviews/star.svg" alt="star" class="reviews__star-icon" />
-                <span class="reviews__rate-text">4,87 / 5</span>
-              </div>
-            </div>
-            <div class="reviews__item">
-              <div class="reviews__item-info">
-                <img src="images/reviews/review6.png" alt="review" class="reviews__item-img" />
-                <span class="reviews__item-info-text">
-                  <span class="reviews__item-info-title">Ім'я Прізвище</span>
-                  <span class="reviews__item-info-sub-title">Студент курсу «WEB-розробник»</span>
-                </span>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                feugiat nisl at augue dapibus, id tristique lorem placerat.
-                Curabitur pellentesque est bibendum urna facilisis varius. In
-                hac habitasse platea dictumst. In ut dui sodales.
-              </div>
-              <div class="reviews__rate">
-                <img src="images/reviews/star.svg" alt="star" class="reviews__star-icon" />
-                <span class="reviews__rate-text">4,87 / 5</span>
-              </div>
-            </div>
-            <div class="reviews__item">
-              <div class="reviews__item-info">
-                <img src="images/reviews/review6.png" alt="review" class="reviews__item-img" />
-                <span class="reviews__item-info-text">
-                  <span class="reviews__item-info-title">Ім'я Прізвище</span>
-                  <span class="reviews__item-info-sub-title">Студент курсу «WEB-розробник»</span>
-                </span>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                feugiat nisl at augue dapibus, id tristique lorem placerat.
-                Curabitur pellentesque est bibendum urna facilisis varius. In
-                hac habitasse platea dictumst. In ut dui sodales.
-              </div>
-              <div class="reviews__rate">
-                <img src="images/reviews/star.svg" alt="star" class="reviews__star-icon" />
-                <span class="reviews__rate-text">4,87 / 5</span>
+        </section>
+        <section class="reviews">
+          <div class="reviews__inner">
+            <div class="reviews__title">Відгуки наших студентів</div>
+            <div class="reviews__row">
+              <div class="reviews__row-inner">
+                <div class="reviews__item">
+                  <div class="reviews__item-info">
+                    <img
+                      src="images/reviews/review1.png"
+                      alt="review"
+                      class="reviews__item-img"
+                    />
+                    <span class="reviews__item-info-text">
+                      <span class="reviews__item-info-title"
+                        >Ім'я Прізвище</span
+                      >
+                      <span class="reviews__item-info-sub-title"
+                        >Студент курсу «WEB-розробник»</span
+                      >
+                    </span>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                    In hac habitasse platea dictumst. In ut dui sodales.
+                  </div>
+                  <div class="reviews__rate">
+                    <img
+                      src="images/reviews/star.svg"
+                      alt="star"
+                      class="reviews__star-icon"
+                    />
+                    <span class="reviews__rate-text">4,87 / 5</span>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-info">
+                    <img
+                      src="images/reviews/review2.png"
+                      alt="review"
+                      class="reviews__item-img"
+                    />
+                    <span class="reviews__item-info-text">
+                      <span class="reviews__item-info-title"
+                        >Ім'я Прізвище</span
+                      >
+                      <span class="reviews__item-info-sub-title"
+                        >Студент курсу «WEB-розробник»</span
+                      >
+                    </span>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                  </div>
+                  <div class="reviews__rate">
+                    <img
+                      src="images/reviews/star.svg"
+                      alt="star"
+                      class="reviews__star-icon"
+                    />
+                    <span class="reviews__rate-text">4,87 / 5</span>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-info">
+                    <img
+                      src="images/reviews/review3.png"
+                      alt="review"
+                      class="reviews__item-img"
+                    />
+                    <span class="reviews__item-info-text">
+                      <span class="reviews__item-info-title"
+                        >Ім'я Прізвище</span
+                      >
+                      <span class="reviews__item-info-sub-title"
+                        >Студент курсу «WEB-розробник»</span
+                      >
+                    </span>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                    In hac habitasse platea dictumst. In ut dui sodales. Lorem
+                    ipsum dolor sit amet.
+                  </div>
+                  <div class="reviews__rate">
+                    <img
+                      src="images/reviews/star.svg"
+                      alt="star"
+                      class="reviews__star-icon"
+                    />
+                    <span class="reviews__rate-text">4,87 / 5</span>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-info">
+                    <img
+                      src="images/reviews/review3.png"
+                      alt="review"
+                      class="reviews__item-img"
+                    />
+                    <span class="reviews__item-info-text">
+                      <span class="reviews__item-info-title"
+                        >Ім'я Прізвище</span
+                      >
+                      <span class="reviews__item-info-sub-title"
+                        >Студент курсу «WEB-розробник»</span
+                      >
+                    </span>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                  </div>
+                  <div class="reviews__rate">
+                    <img
+                      src="images/reviews/star.svg"
+                      alt="star"
+                      class="reviews__star-icon"
+                    />
+                    <span class="reviews__rate-text">4,87 / 5</span>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-info">
+                    <img
+                      src="images/reviews/review4.png"
+                      alt="review"
+                      class="reviews__item-img"
+                    />
+                    <span class="reviews__item-info-text">
+                      <span class="reviews__item-info-title"
+                        >Ім'я Прізвище</span
+                      >
+                      <span class="reviews__item-info-sub-title"
+                        >Студент курсу «WEB-розробник»</span
+                      >
+                    </span>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus
+                  </div>
+                  <div class="reviews__rate">
+                    <img
+                      src="images/reviews/star.svg"
+                      alt="star"
+                      class="reviews__star-icon"
+                    />
+                    <span class="reviews__rate-text">4,87 / 5</span>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-info">
+                    <img
+                      src="images/reviews/review5.png"
+                      alt="review"
+                      class="reviews__item-img"
+                    />
+                    <span class="reviews__item-info-text">
+                      <span class="reviews__item-info-title"
+                        >Ім'я Прізвище</span
+                      >
+                      <span class="reviews__item-info-sub-title"
+                        >Студент курсу «WEB-розробник»</span
+                      >
+                    </span>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                    In hac habitasse platea dictumst. In ut dui sodales. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <div class="reviews__rate">
+                    <img
+                      src="images/reviews/star.svg"
+                      alt="star"
+                      class="reviews__star-icon"
+                    />
+                    <span class="reviews__rate-text">4,87 / 5</span>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-info">
+                    <img
+                      src="images/reviews/review1.png"
+                      alt="review"
+                      class="reviews__item-img"
+                    />
+                    <span class="reviews__item-info-text">
+                      <span class="reviews__item-info-title"
+                        >Ім'я Прізвище</span
+                      >
+                      <span class="reviews__item-info-sub-title"
+                        >Студент курсу «WEB-розробник»</span
+                      >
+                    </span>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                    In hac habitasse platea dictumst. In ut dui sodales.
+                  </div>
+                  <div class="reviews__rate">
+                    <img
+                      src="images/reviews/star.svg"
+                      alt="star"
+                      class="reviews__star-icon"
+                    />
+                    <span class="reviews__rate-text">4,87 / 5</span>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-info">
+                    <img
+                      src="images/reviews/review6.png"
+                      alt="review"
+                      class="reviews__item-img"
+                    />
+                    <span class="reviews__item-info-text">
+                      <span class="reviews__item-info-title"
+                        >Ім'я Прізвище</span
+                      >
+                      <span class="reviews__item-info-sub-title"
+                        >Студент курсу «WEB-розробник»</span
+                      >
+                    </span>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                    In hac habitasse platea dictumst. In ut dui sodales.
+                  </div>
+                  <div class="reviews__rate">
+                    <img
+                      src="images/reviews/star.svg"
+                      alt="star"
+                      class="reviews__star-icon"
+                    />
+                    <span class="reviews__rate-text">4,87 / 5</span>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-info">
+                    <img
+                      src="images/reviews/review6.png"
+                      alt="review"
+                      class="reviews__item-img"
+                    />
+                    <span class="reviews__item-info-text">
+                      <span class="reviews__item-info-title"
+                        >Ім'я Прізвище</span
+                      >
+                      <span class="reviews__item-info-sub-title"
+                        >Студент курсу «WEB-розробник»</span
+                      >
+                    </span>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    feugiat nisl at augue dapibus, id tristique lorem placerat.
+                    Curabitur pellentesque est bibendum urna facilisis varius.
+                    In hac habitasse platea dictumst. In ut dui sodales.
+                  </div>
+                  <div class="reviews__rate">
+                    <img
+                      src="images/reviews/star.svg"
+                      alt="star"
+                      class="reviews__star-icon"
+                    />
+                    <span class="reviews__rate-text">4,87 / 5</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-    </section>
-    <section class="benefits" id="benefits">
-      <div class="container">
-        <div class="benefits__inner">
-          <h2 class="benefits__title">
-            Ласкаво просимо в Академію майбутнього ХОД
-          </h2>
-          <ul class="benefits__list">
-            <li class="benefits__item">
-              <img src="images/benefits/mechanism.svg" alt="mechanism" class="benefits__item-img" />
-              <div class="benefits__item-title">
-                Передовий підхід до освітнього процесу
-              </div>
-            </li>
-            <li class="benefits__item">
-              <img src="images/benefits/book.svg" alt="book" class="benefits__item-img" />
-              <div class="benefits__item-title">
-                Безперервне вдосконалення та поповнення бази курсів
-              </div>
-            </li>
-            <li class="benefits__item">
-              <img src="images/benefits/write.svg" alt="write" class="benefits__item-img" />
-              <div class="benefits__item-title">
-                Тільки практикуючі викладачі
-              </div>
-            </li>
-            <li class="benefits__item">
-              <img src="images/benefits/man.svg" alt="man" class="benefits__item-img" />
-              <div class="benefits__item-title">
-                Супровід на всіх етапах. Від початку навчання до
-                працевлаштування
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="help-box">
-      <div class="card-shadow help-box__inner">
-        <img src="images/owl.svg" alt="owl" width="230" class="help-box__owl" />
-        <div class="help-box__img">
-          <span> Допомогти з вибором? </span>
-          <br />
-          Залиште заявку і наші фахівці зв'яжуться з вами, дадуть відповідь на
-          всі запитання і підберуть відповідний варіант навчання.
-        </div>
-        <form class="help-box__form">
-          <input type="text" placeholder="Ваше ім'я" class="help-box__login" />
-          <input type="tel" placeholder="Ваш номер телефону" class="help-box__phone" />
-          <input type="email" placeholder="Ваш e-mail" class="help-box__email" />
-          <p class="help-box__form-text">
-            Натискаючи на кнопку, я погоджуюся на обробку персональних даних та з правилами користування Платформою
-          </p>
-          <button type="submit" class="help-box__btn">Відправити</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__info">
-          <img src="images/logo.svg" alt="logo" class="footer__logo" />
-          <a href="tel:8 800 950-33-98 " class="footer__phone-number">8 800 950-33-98
-          </a>
-          <div class="footer__location">м. Вінниця, в. В. Отамановського</div>
-          <a href="email:info@hodfutureacademy.ru" class="footer__email">info@hodfutureacademy.ru</a>
-          <div class="footer__socials">
-            <a href="#">
-              <img src="images/social/vk.svg" alt="" class="footer__social-icon" />
-            </a>
-            <a href="#">
-              <img src="images/social/instagram.svg" alt="" class="footer__social-icon" />
-            </a>
-            <a href="#">
-              <img src="images/social/facebook.svg" alt="" class="footer__social-icon" />
-            </a>
-            <a href="#">
-              <img src="images/social/yt.svg" alt="" class="footer__social-icon" />
-            </a>
-            <a href="#">
-              <img src="images/social/tg.svg" alt="" class="footer__social-icon" />
-            </a>
+        </section>
+        <section class="benefits" id="benefits">
+          <div class="container">
+            <div class="benefits__inner">
+              <h2 class="benefits__title">
+                Ласкаво просимо в Академію майбутнього ХОД
+              </h2>
+              <ul class="benefits__list">
+                <li class="benefits__item">
+                  <img
+                    src="images/benefits/mechanism.svg"
+                    alt="mechanism"
+                    class="benefits__item-img"
+                  />
+                  <div class="benefits__item-title">
+                    Передовий підхід до освітнього процесу
+                  </div>
+                </li>
+                <li class="benefits__item">
+                  <img
+                    src="images/benefits/book.svg"
+                    alt="book"
+                    class="benefits__item-img"
+                  />
+                  <div class="benefits__item-title">
+                    Безперервне вдосконалення та поповнення бази курсів
+                  </div>
+                </li>
+                <li class="benefits__item">
+                  <img
+                    src="images/benefits/write.svg"
+                    alt="write"
+                    class="benefits__item-img"
+                  />
+                  <div class="benefits__item-title">
+                    Тільки практикуючі викладачі
+                  </div>
+                </li>
+                <li class="benefits__item">
+                  <img
+                    src="images/benefits/man.svg"
+                    alt="man"
+                    class="benefits__item-img"
+                  />
+                  <div class="benefits__item-title">
+                    Супровід на всіх етапах. Від початку навчання до
+                    працевлаштування
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
+        </section>
+        <section class="help-box">
+          <div class="card-shadow help-box__inner">
+            <img
+              src="images/owl.svg"
+              alt="owl"
+              width="230"
+              class="help-box__owl"
+            />
+            <div class="help-box__img">
+              <span> Допомогти з вибором? </span>
+              <br />
+              Залиште заявку і наші фахівці зв'яжуться з вами, дадуть відповідь
+              на всі запитання і підберуть відповідний варіант навчання.
+            </div>
+            <form class="help-box__form">
+              <input
+                type="text"
+                placeholder="Ваше ім'я"
+                class="help-box__login"
+              />
+              <input
+                type="tel"
+                placeholder="Ваш номер телефону"
+                class="help-box__phone"
+              />
+              <input
+                type="email"
+                placeholder="Ваш e-mail"
+                class="help-box__email"
+              />
+              <p class="help-box__form-text">
+                Натискаючи на кнопку, я погоджуюся на обробку персональних даних
+                та з правилами користування Платформою
+              </p>
+              <button type="submit" class="help-box__btn">Відправити</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <img src="images/logo.svg" alt="logo" class="footer__logo" />
+              <a href="tel:8 800 950-33-98 " class="footer__phone-number"
+                >8 800 950-33-98
+              </a>
+              <div class="footer__location">
+                м. Вінниця, в. В. Отамановського
+              </div>
+              <a href="email:info@hodfutureacademy.ru" class="footer__email"
+                >info@hodfutureacademy.ru</a
+              >
+              <div class="footer__socials">
+                <a href="#">
+                  <img
+                    src="images/social/vk.svg"
+                    alt=""
+                    class="footer__social-icon"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="images/social/instagram.svg"
+                    alt=""
+                    class="footer__social-icon"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="images/social/facebook.svg"
+                    alt=""
+                    class="footer__social-icon"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="images/social/yt.svg"
+                    alt=""
+                    class="footer__social-icon"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="images/social/tg.svg"
+                    alt=""
+                    class="footer__social-icon"
+                  />
+                </a>
+              </div>
 
-          <div class="rights">© ХОД, Future Academy</div>
+              <div class="rights">© ХОД, Future Academy</div>
+            </div>
+            <div class="footer__row">
+              <div class="footer__column">
+                <div class="footer__colummn-title">Дітям</div>
+                <ul class="footer__column-list">
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Малювання та живопис</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Кулінарія та кондитерська справа</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Танці</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Шахи</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Розробка ігор</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Англійська мова</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <div class="footer__colummn-title">Підліткам</div>
+                <ul class="footer__column-list">
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Програмування на Python</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Основи фінансової грамотності</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Веб-дизайн</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Музичні інструменти (гітара, піаніно)</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Робототехніка</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">
+                      Графічний дизайн</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">
+                      Історія та культура</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <div class="footer__colummn-title">Дорослим</div>
+                <ul class="footer__column-list">
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Штучний інтелект і машинне навчання</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Фотографія</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Йога і медитація</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Шахи</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Акторська майстерність</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Астрономія та космонавтика</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Фітнес і здоровий спосіб життя</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Психологія та самопізнання</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <div class="footer__colummn-title">Дорослим</div>
+                <ul class="footer__column-list">
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link"
+                      >Штучний інтелект і машинне навчання</a
+                    >
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Про академію</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Заходи</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Новини</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">База знань</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Кар'єра</a>
+                  </li>
+                  <li class="footer__column-item">
+                    <a href="#" class="footer__column-link">Контакти</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="footer__row">
-          <div class="footer__column">
-            <div class="footer__colummn-title">Дітям</div>
-            <ul class="footer__column-list">
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Малювання та живопис</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Кулінарія та кондитерська справа</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Танці</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Шахи</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Розробка ігор</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Англійська мова</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__column">
-            <div class="footer__colummn-title">Підліткам</div>
-            <ul class="footer__column-list">
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Програмування на Python</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Основи фінансової грамотності</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Веб-дизайн</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Музичні інструменти (гітара, піаніно)</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Робототехніка</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link"> Графічний дизайн</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">
-                  Історія та культура</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__column">
-            <div class="footer__colummn-title">Дорослим</div>
-            <ul class="footer__column-list">
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Штучний інтелект і машинне навчання</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Фотографія</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Йога і медитація</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Шахи</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Акторська майстерність</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Астрономія та космонавтика</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Фітнес і здоровий спосіб життя</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Психологія та самопізнання</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__column">
-            <div class="footer__colummn-title">Дорослим</div>
-            <ul class="footer__column-list">
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Штучний інтелект і машинне навчання</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Про академію</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Заходи</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Новини</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">База знань</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Кар'єра</a>
-              </li>
-              <li class="footer__column-item">
-                <a href="#" class="footer__column-link">Контакти</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </footer>
     </div>
-  </footer>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/location.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
